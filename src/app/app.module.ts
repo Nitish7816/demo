@@ -15,7 +15,7 @@ const appRoutes: Routes = [
   { path: 'signup',      component: SignupComponent },
   { path: 'welcome',      component: WelcomeComponent },
   { path: 'test',      component: TestComponent },
-  { path: 'testHttp',      component: TestHttpComponent }
+  { path: 'testHttp',      component: TestHttpComponent },
 ];
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
     WelcomeComponent,
     SignupComponent,
     TestComponent,
-    TestHttpComponent
+    TestHttpComponent,
   ],
   imports: [
     BrowserModule,
