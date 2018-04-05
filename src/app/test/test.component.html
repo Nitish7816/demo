@@ -1,0 +1,16 @@
+<button (click)="onClick($event)">click Me</button>
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+<br>
+{{clickMessage}}
+<div>
+  months:
+  <select (click) = "changemonth($event)">
+    <option *ngFor="let i of months">{{i}}</option>
+  </select>
+</div>
+<div>
+  <span *ngIf="isavailable; then condition2 else condition1">.</span>
+  <ng-template #condition2>Condition is valid</ng-template>
+  <ng-template #condition1>Condition is invalid</ng-template>
+</div>

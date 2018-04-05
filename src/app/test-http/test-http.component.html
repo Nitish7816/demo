@@ -1,0 +1,6 @@
+<input type="text" (keyup)="onNameKeyUp($event)">
+<button (click)="getProfile()">Get Profile</button>
+<br>
+<span *ngFor="let ramesh of data">
+  {{ramesh.id}}-{{ramesh.title}} <br>
+</span>
