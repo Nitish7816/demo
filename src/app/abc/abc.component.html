@@ -1,0 +1,6 @@
+<form [formGroup]="userForm" (submit)="saveUser()">
+  <label for="name">Name</label>
+  <input formControlName="name" (change)="someMethod()" id="name" #name>
+  <div [hidden]="userForm?.controls?.name?.valid">Required</div>
+  <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
